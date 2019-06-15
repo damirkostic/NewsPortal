@@ -1,0 +1,216 @@
+/*stiliziranje*/
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+/*header*/
+header {
+    max-width: 100%;
+    border-bottom: 2px solid #8a8a8a;
+}
+.logo { 
+    max-width: 200px;
+    height: 80px;
+    margin: auto;
+    padding-top: 10px;
+}
+.logo img {
+    max-width: 100%;
+    float: left;
+}
+/*navigacija*/
+.navigacija {
+    clear: both;
+    width: 55%;
+    margin: auto; 
+}
+.navigacija ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    float:left;
+}
+.navigacija li {
+    float: left;
+    width: 20%;
+}
+.navigacija a:link , .navigacija a:visited {
+    height: 30px;
+    line-height: 200%;
+    display: block;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px 10px 20px;
+}
+/*index.php - sredina*/
+main {
+    max-width: 1000px;
+    margin: auto;
+} 
+main p:first-child {
+    clear: both;
+}
+.naslov {
+    clear: both;
+    float:left;
+    width: 100px;
+    border-top: 2px solid black;
+    margin-top: 10px;
+}
+.naslov h2 {
+    text-transform: uppercase;
+}
+
+/*index.php - prvi red*/
+.prvi-red {
+    max-width: 100%;
+    clear: both;
+    float:left;
+}
+article {
+    width: 30%;
+    float: left;
+    margin: 0 3% 0 0;
+}
+article img {
+    width: 100%;
+    height: 180px;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+article p {
+    font-weight: bold;
+    font-size: 18px;
+}
+article a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.sadrzaj p {
+    padding-bottom: 20px;
+}
+.slika img {
+    margin-top: 15px;
+}
+/*administracija.php*/
+.wrapper .item {
+    clear: both;
+    width:100%;
+    float: left;
+}
+
+.prijavaForma {
+    width: 100%;
+    float:left;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.prijavaForma button, .form-item button {
+    background-color: #1ea0e6;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 14px;
+    text-decoration:none;
+}
+button#stil.link a {
+    color: white;
+    text-decoration: none;
+}
+
+/*unos.php*/
+
+/*drugi-red*/
+.drugi-red {
+    clear: both;
+    max-width: 100%;
+    float:left;
+    margin-bottom: 20px;
+}
+form {
+    width: 100%;
+    clear: both;
+    float: left;
+}
+/*skripta.php*/
+.category {
+    clear: both;
+    text-decoration: underline;
+    text-decoration-color: #8a8a8a;
+    padding-bottom: 10px;
+}
+
+.category:first-letter {
+    text-transform: uppercase;
+}
+.title {
+    padding-bottom: 10px;
+   
+}
+.autor , .objavljeno {
+    font-size: 12px;
+    color: #8a8a8a;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.about {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.content {
+    padding-bottom: 10px;
+}
+.bojaPoruke {
+    color: red;
+}
+/*registracija.php*/
+.form-item {
+    margin-top: 5px;
+}
+.form-item button {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+/*kategorija.php*/
+.novi-red {
+    width: 100%;
+    clear: both;
+    float: left;
+}
+h4 {
+    margin: 5px 5px;
+}
+/*footer*/
+footer {
+    max-width: 100%; 
+    margin: auto;
+    clear: both;
+    background-color: #ededed;
+    height: 80px;
+    padding-top: 100px;
+    text-align: center;
+}
+footer p {
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 2px solid #8a8a8a;
+}
+.autorska-prava {
+    font-weight: bolder;
+}
