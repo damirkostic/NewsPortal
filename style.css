@@ -12,6 +12,7 @@ body {
 header {
     max-width: 100%;
     border-bottom: 2px solid #8a8a8a;
+    margin-bottom: 10px;
 }
 .logo { 
     max-width: 200px;
@@ -26,12 +27,12 @@ header {
 /*navigacija*/
 .navigacija {
     clear: both;
-    width: 55%;
+    width: 57%;
     margin: auto; 
 }
 .navigacija ul {
     list-style-type: none;
-    margin: 0px;
+    margin-bottom: 10px;
     padding: 0px;
     width: 100%;
     float:left;
@@ -41,6 +42,7 @@ header {
     width: 20%;
 }
 .navigacija a:link , .navigacija a:visited {
+    font-size: 12.3px;
     height: 30px;
     line-height: 200%;
     display: block;
@@ -49,7 +51,13 @@ header {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 10px 20px 10px 20px;
+    white-space: nowrap;
+    width: auto;
+}
+.navigacija a:hover , .navigacija a:active {
+    color: white;
+    background-color: #1ea0e6;
+    padding: 5px;
 }
 /*index.php - sredina*/
 main {
@@ -97,6 +105,9 @@ article a {
     color: black;
     font-weight: bold;
 }
+article a:hover {
+    color: #1ea0e6;
+}
 .sadrzaj p {
     padding-bottom: 20px;
 }
@@ -109,7 +120,25 @@ article a {
     width:100%;
     float: left;
 }
-
+.odjava {
+    width: 50%;
+    clear: both;
+    float: left;
+}
+.odjava a {
+    text-decoration: none;
+    background-color: #1ea0e6;
+    color: white;
+    padding:5px;
+    margin-top: 30px;
+}
+.odjava a:hover {
+    background-color: #8a8a8a;
+    color: black;
+}
+.odjava p {
+    padding-bottom: 10px;
+}
 .prijavaForma {
     width: 100%;
     float:left;
@@ -120,16 +149,34 @@ article a {
     background-color: #1ea0e6;
     color: white;
     border: none;
-    padding: 10px;
     text-align: center;
     text-decoration: none;
-    display: inline;
+    height: 30px;
     font-size: 14px;
-    text-decoration:none;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.prijavaForma button:hover, .form-item button:hover {
+    background-color: #8a8a8a;
+    color: black;
 }
 button#stil.link a {
+    padding: 10px;
+    height: 20px;
     color: white;
     text-decoration: none;
+}
+button#stil.link a:hover {
+    color: black;
+}
+button#slanje {
+    padding: 5px;
+}
+button {
+    padding: 5px;
+}
+.form-field img {
+    max-width: 50%;
 }
 
 /*unos.php*/
@@ -214,3 +261,9 @@ footer p {
 .autorska-prava {
     font-weight: bolder;
 }
+@media screen and (max-width: 993px) {
+    .navigacija li {
+        width: 100%;
+    }
+  }
+  
