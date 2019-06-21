@@ -232,13 +232,13 @@
 	}
 	 // Pokaži poruku da je korisnik uspješno prijavljen, ali nije administrator
 	 } else if ($uspjesnaPrijava == true && $admin == false) {
-	 echo '<p>Bok ' . $imeKorisnika . '! Uspješno ste prijavljeni, ali
+	 echo '<div class="odjava"><p>Bok ' . $imeKorisnika . '! Uspješno ste prijavljeni, ali
 	niste administrator.</p>
-	<a href="logout.php">Odjava</a>';
+	<a href="logout.php">Odjava</a></div>';
 	 } else if (isset($_SESSION['$username']) && $_SESSION['$level'] == 0) {
-	 echo '<p>Bok ' . $_SESSION['$username'] . '! Uspješno ste
+	 echo '<div class="odjava"><p>Bok ' . $_SESSION['$username'] . '! Uspješno ste
 	prijavljeni, ali niste administrator.</p>
-	<a href="logout.php">Odjava</a>';
+	<a href="logout.php">Odjava</a></div>';
 	 } else if ($uspjesnaPrijava == false) {
 		echo '
 				<form action="administracija.php" method="POST" enctype="multipart/form-data">
